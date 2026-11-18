@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Course Synopsis &amp; Learning Outcomes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700;8..60,800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1a1a1a;--ink-soft:#5b5b66;--panel:#faf9f7;--line:rgba(32,36,43,0.14);}
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;background:#FFFFFF;color:var(--ink);font-family:'Source Serif 4',Georgia,'Times New Roman',serif;}
+.wrap{width:100%;padding:32px 28px 50px;}
+.card{width:100%;position:relative;background:#ffc59e;border-radius:28px;box-shadow:0 10px 30px rgba(32,36,43,0.10);padding:34px 42px 44px;overflow:hidden;}
+.card::before{content:"";position:absolute;top:0;left:0;right:0;height:6px;background:linear-gradient(90deg,#6b3fa0 0 33.33%,#b8952e 33.33% 66.66%,#6b9c4d 66.66% 100%);}
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin:0 0 22px;}
+h1{font-size:clamp(22px,3.5vw,30px);margin:0;font-weight:800;line-height:1.3;display:flex;align-items:center;gap:10px;}
+h1 .icon{font-size:28px;line-height:1;}
+.lang{display:inline-flex;background:rgba(255,255,255,.7);border:1px solid var(--line);border-radius:999px;padding:4px;gap:4px;}
+.lang button{appearance:none;border:none;background:transparent;font-family:inherit;font-size:14px;font-weight:600;color:var(--ink-soft);padding:7px 14px;border-radius:999px;cursor:pointer;}
+.lang button.on{background:var(--ink);color:#fff;}
+.rows{display:flex;flex-direction:column;gap:8px;}
+.row{display:grid;grid-template-columns:300px minmax(0,1fr);border:1px solid var(--line);border-radius:22px;background:var(--panel);overflow:hidden;}
+.row-head{background:var(--tint);padding:22px 24px;border-right:1px solid var(--line);font-size:18px;font-weight:600;display:flex;align-items:flex-start;gap:10px;}
+.row-head .dot{width:9px;height:9px;border-radius:50%;background:var(--dot);flex:none;margin-top:9px;}
+.row-body{padding:22px 28px 24px;min-width:0;}
+.row-body p{font-size:16px;line-height:1.7;margin:0;}
+.syn{--tint:#f0eafc;--dot:#6b3fa0;}
+.out{--tint:#fdf6dc;--dot:#b8952e;}
+.imp{--tint:#e2f0d9;--dot:#6b9c4d;}
+.lo{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:max-content minmax(0,1fr);gap:12px 14px;align-items:baseline;}
+.lo li{display:contents;}
+.lo-text{font-size:16px;line-height:1.65;}
+.lo-tag{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:#b8952e;border-radius:999px;padding:3px 10px;text-align:center;}
+[data-l="bm"]{display:none;}
+body.bm [data-l="en"]{display:none;}
+body.bm [data-l="bm"]{display:block;}
+body.bm ul[data-l="bm"]{display:grid;}
+.drive{display:flex;align-items:center;gap:10px;background:#dce9fb;border:1.5px solid #a9c8ec;border-radius:14px;padding:13px 16px;margin-top:14px;text-decoration:none;color:var(--ink);font-weight:600;font-size:16px;}
+.drive:hover{border-color:#4a7fc4;}
+.drive small{display:block;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#3568ab;}
+.drive .arrow{margin-left:auto;color:#3568ab;}
+@media (max-width:720px){
+.wrap{padding:20px 12px 32px;}
+.card{padding:26px 18px 30px;}
+.row{display:block;}
+.row-head{border-right:none;border-bottom:1px solid var(--line);padding:16px 18px;}
+.row-body{padding:16px 18px 20px;}
+}
+</style>
+</head>
+<body>
+<div class="wrap"><div class="card">
+<div class="top">
+<h1><span class="icon">🤝</span> HBT 313/4 COMMUNITY-BASED INTERPRETING</h1>
+<div class="lang"><button class="on" data-set="en">English</button><button data-set="bm">Bahasa Melayu</button></div>
+</div>
+<div class="rows">
+<div class="row syn"><div class="row-head"><span class="dot"></span><span data-l="en">Course Synopsis</span><span data-l="bm">Sinopsis Kursus</span></div>
+<div class="row-body"><p data-l="en">This course introduces students to the history of interpreting, the general theoretical framework of interpreting and the interpreting process. This helps them understand that interpreting is a process of communication across languages and cultures, involving bilateral and multilateral situations. Emphasis is placed on sight translation techniques and an introduction to consecutive interpreting techniques. Professional work ethics in the interpreting profession are also emphasised.</p><p data-l="bm">Kursus ini memperkenalkan sejarah interpretasi, kerangka teori am interpretasi dan proses interpretasi kepada pelajar. Hal ini membantu mereka memahami bahawa interpretasi merupakan suatu proses komunikasi antara bahasa dan antara budaya yang melibatkan situasi bilateral dan multilateral. Tumpuan diberikan kepada teknik terjemahan visual dan pengenalan kepada teknik interpretasi berturutan. Etika kerja profesional dalam profesion jurubahasa turut dititikberatkan.</p></div></div>
+<div class="row out"><div class="row-head"><span class="dot"></span><span data-l="en">Learning Outcomes</span><span data-l="bm">Hasil Pembelajaran</span></div>
+<div class="row-body"><ul class="lo" data-l="en">
+<li><span class="lo-tag">CO1</span><span class="lo-text">Elaborate on the development of and issues in the field of interpreting in various situations.</span></li>
+<li><span class="lo-tag">CO2</span><span class="lo-text">Demonstrate the ability to convey messages by selecting interpreting methods appropriate to the context of consecutive interpreting.</span></li>
+<li><span class="lo-tag">CO3</span><span class="lo-text">Practise appropriate codes of ethics in various consecutive interpreting exercises.</span></li>
+<li><span class="lo-tag">CO4</span><span class="lo-text">Organise relevant information effectively from various sources in carrying out interpreting tasks.</span></li>
+</ul><ul class="lo" data-l="bm">
+<li><span class="lo-tag">CO1</span><span class="lo-text">Menghuraikan perkembangan dan isu bidang interpretasi dalam pelbagai situasi.</span></li>
+<li><span class="lo-tag">CO2</span><span class="lo-text">Mempamerkan kebolehan menyampaikan mesej menerusi pemilihan kaedah interpretasi yang bersesuaian untuk konteks interpretasi berturutan.</span></li>
+<li><span class="lo-tag">CO3</span><span class="lo-text">Mengamalkan kod etika yang bertepatan dalam latihan pelbagai interpretasi berturutan.</span></li>
+<li><span class="lo-tag">CO4</span><span class="lo-text">Mengorganisasikan maklumat yang relevan secara efektif daripada pelbagai sumber dalam merealisasikan tugas interpretasi.</span></li>
+</ul></div></div>
+</div>
+</div></div>
+<script>
+document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){
+document.body.classList.toggle('bm',b.dataset.set==='bm');
+document.querySelectorAll('.lang button').forEach(function(x){x.classList.toggle('on',x===b);});});});
+</script>
+</body>
+</html>
